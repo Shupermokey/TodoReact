@@ -1,6 +1,7 @@
 import TodoRowItem from "./TodoRowItem"
+import React from "react"
 
-function TodoTable(props)
+function TodoTable(props: {todos: TodoModel[], deleteTodo: Function})
 {
 
 

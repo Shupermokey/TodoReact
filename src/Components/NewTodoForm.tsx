@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 
 
-function NewTodoForm(props) {
+function NewTodoForm(props: {addTodo: Function}) {
 
     const [description, setDescription] = useState('');
     const [assigned, setAssigned] = useState('');
@@ -20,7 +20,7 @@ function NewTodoForm(props) {
 
             <form>
                 <div className = 'mb-3'>
-                    <lable className='form-label'>Assigned</lable>
+                    <label className='form-label'>Assigned</label>
                     <input type='text' className='form-control' required onChange={e => setAssigned(e.target.value)} value={assigned}></input>
                 </div>
 
